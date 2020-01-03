@@ -3,18 +3,18 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"github.com/cosmonawt/monkey/lexer"
-	"github.com/cosmonawt/monkey/token"
 	"io"
+	"monkey/lexer"
+	"monkey/token"
 )
 
-const prompt = ">> "
+const PROMPT = ">> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
 	for {
-		fmt.Printf(prompt)
+		fmt.Printf(PROMPT)
 		scanned := scanner.Scan()
 		if !scanned {
 			return

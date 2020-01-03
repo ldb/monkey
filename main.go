@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/cosmonawt/monkey/repl"
+	"monkey/repl"
 	"os"
 )
 
